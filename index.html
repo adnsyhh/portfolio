@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tailwind CSS</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body class="font-jakarta">
+
+    <!-- Header Start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-primary block py-6">Adnsyhh</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-gray-700 shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#about" class="text-base text-primary py-2 mx-8 flex group-hover:text-gray-300">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio" class="text-base text-primary py-2 mx-8 flex group-hover:text-gray-300">Portfolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#skills" class="text-base text-primary py-2 mx-8 flex group-hover:text-gray-300">Skills</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-primary py-2 mx-8 flex group-hover:text-gray-300">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-bold text-primary md:text-xl lg:text-2xl">
+                        Hello 👋, I'am <span class="block text-primary text-4xl mt-1 lg:text-5xl">Muhammad Adnansyah</span></h1>
+                    <h2 class="font-medium text-lg mb-5 text-primary">Student College </h2>
+                    
+
+                    <a href="#" class="text-base font-semibold text-black bg-primary py-3 px-8 
+                    hover:shadow-lg hover:opacity-80 transition duration-300 
+                    ease-in-out">Contact</a>
+                </div>
+                <div class="w=full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-9 lg:right-0">
+                        <img src="dist/img/sapiens.svg" alt="pic" class="max-w-full mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+     
+    <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold text-primary text-3xl mb-5">About Me</h4>
+                    <p class="font-roboto text-base text-white max-w-xl mb-10">
+                        I am Adnan, college student of Informatics at Telkom University who is very interested in the world of programming. 
+                        Especially in back-end development and networking on computers. I have a high interest in something new that can 
+                        improve my knowledge and my quality.
+                    </p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2"> 
+                    <h3 class="font-semibold text-primary text-3xl mb-4 lg:text-5xl lg:pt-10">Let's Connect</h3>
+                    <div class="flex items-center">
+                        <!-- instagram -->
+                        <a href="https://www.instagram.com/adsyhh16/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-sec hover:border-white hover:bg-gray-400 hover:text-white">
+                            <svg role="img" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+                                <title>Instagram</title>
+                                <path 
+                                d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/>
+                            </svg>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/muhammad-adnansyah/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border-sec hover:border-white hover:bg-gray-400 hover:text-white">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+                                <title>LinkedIn</title>
+                                <path 
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/adnsyhh" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border-sec hover:border-white hover:bg-gray-400 hover:text-white">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="fill-white">
+                                <title>GitHub</title>
+                                <path 
+                                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+
+    <section id="portfolio" class="pt-36 pb-16 bg-white">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16 sm:text-4xl lg:text-5xl">
+                    <h4 class="font-semibold text-black mb-2 text-4xl">Portfolio</h4>
+                    <h2 class="font-bold text-3xl mb-4 ">My Projects</h2>
+                </div>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+                <div class="mb-12 p-8 md:w-1/3">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="" alt="">
+                    </div>
+                    <h3 class="font-semibold text-xl text-black mt-5 mb-3 text-center">Game RPG</h3>
+                    <p class="font-medium text-base text-gray-500 mb-5">This project implements fighter selection as a solution to the knapsack problem using two algorithmic approaches, namely Brute Force and Greedy. Each fighter has strength attributes and other values that will be used to select the optimal combination in a team.</p>
+                    <a href="https://github.com/adnsyhh/Game-RPG.git" class="text-base font-semibold rounded-2xl text-black border-2 border-black bg-transparent py-3 px-8
+                    hover:shadow-lg transition duration-300 
+                    ease-in-out">GitHub</a>
+                </div>
+                <div class="mb-12 p-8 md:w-1/3">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="" alt="">
+                    </div>
+                    <h3 class="font-semibold text-xl text-black mt-5 mb-3 text-center">TCP-based Web Server</h3>
+                    <p class="font-medium text-base text-gray-500 mb-5">This project is an implementation of a simple web server based on TCP (Transmission Control Protocol) protocol using socket programming. This web server is able to receive and handle HTTP requests from clients (browsers) and respond by sending static HTML files.</p>
+                    <a href="https://github.com/adnsyhh/Web-Server-Berbasis-TCP.git" class="text-base font-semibold rounded-2xl text-black border-2 border-black bg-transparent py-3 px-8
+                    hover:shadow-lg transition duration-300 
+                    ease-in-out">GitHub</a>
+                </div>
+                <div class="mb-12 p-8 md:w-1/3">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="" alt="">
+                    </div>
+                    <h3 class="font-semibold text-xl text-black mt-5 mb-3 text-center">MobilEase</h3>
+                    <p class="font-medium text-base text-gray-500 mb-5">The MobilEase application is an application that serves to facilitate data collection of vehicle rentals, especially cars. This program performs data collection with a multi linkedlist representation where the list has a parent list and child list. The parent list contains the identity of the tenant such as the tenant's name, the tenant's nik, the tenant's telephone number and added with the rental time. While the child list contains the type of car and car plate.</p>
+                    <a href="https://github.com/adnsyhh/Aplikasi-Sederhana-Rental-Mobil.git" class="text-base font-semibold rounded-2xl text-black border-2 border-black bg-transparent py-3 px-8
+                    hover:shadow-lg transition duration-300 
+                    ease-in-out">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section End -->
+
+    <!-- Skills Start -->
+
+    <section id="skills" class="pt-36 pb-32 bg-black ">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16 sm:text-4xl lg:text-5xl">
+                    <h4 class="font-semibold text-primary mb-2 text-4xl">Skills</h4>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                <!-- golang -->
+                <div class="grid grid-cols-3 gap-1 bg-gray-400 py-12 px-6 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 128" id="go" width="auto" height="120">
+                        <defs>
+                            <path id="a" d="M18.8 1h90.5v126h-90.5z"></path>
+                        </defs>
+                        <clipPath id="b">
+                            <use xlink:href="#a" overflow="visible"></use>
+                        </clipPath>
+                        <path fill="#F6D2A2" fill-rule="evenodd" d="M21.1 68.7c.2 3.5 3.7 1.9 5.3.8 1.5-1.1 2-.2 2.1-2.3.1-1.4.2-2.7.2-4.1-2.3-.2-4.8.3-6.7 1.7-.9.7-2.8 3-.9 3.9" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M23 71.2c-.7 0-2-.3-2.2-2.3-.6-.4-.8-.9-.8-1.2-.1-1.2 1.2-2.6 1.9-3.1 1.6-1.2 3.7-1.8 5.9-1.8h1.3v.3c.1 1.1 0 2.2-.1 3.2 0 .3 0 .6-.1.9-.1 1.5-.4 1.7-1.1 2-.3.1-.6.2-1.1.6-.5.3-2.2 1.4-3.7 1.4zm4.8-7.8c-2.1 0-4 .6-5.5 1.7-.7.5-1.7 1.7-1.6 2.5 0 .3.2.6.6.8l.2.1v.2c.1 1.6.9 1.8 1.5 1.8 1 0 2.4-.7 3.3-1.3.6-.4 1-.5 1.3-.6.5-.2.6-.2.7-1.4 0-.3 0-.6.1-.9.1-.9.1-1.9.1-2.8-.3-.1-.5-.1-.7-.1z" clip-path="url(#b)"></path>
+                        <path fill="#C6B198" fill-rule="evenodd" d="M21.1 68.7c.5-.2 1.1-.3 1.4-.8" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M21.1 69c-.1 0-.3-.1-.3-.2-.1-.2 0-.4.2-.4.1 0 .2-.1.2-.1.4-.2.8-.3 1-.6.1-.1.3-.2.5-.1.1.1.2.3.1.5-.4.5-.9.7-1.3.8l-.2.1h-.2z" clip-path="url(#b)"></path>
+                        <path fill="#6AD7E5" fill-rule="evenodd" d="M29.3 26.4c-13.6-3.8-3.5-21.1 7.4-14l-7.4 14z" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M29.5 26.8l-.3-.1c-7-2-6.9-7-6.7-8.5.5-3.8 4.1-7.8 8.9-7.8 1.9 0 3.7.6 5.5 1.8l.3.2-7.7 14.4zm1.9-15.7c-4.5 0-7.8 3.7-8.3 7.2-.5 3.6 1.7 6.4 6 7.7l7.1-13.5c-1.5-.9-3.1-1.4-4.8-1.4z" clip-path="url(#b)"></path>
+                        <path fill="#6AD7E5" fill-rule="evenodd" d="M89.6 11.1c10.7-7.5 20.5 9.5 8 13.8l-8-13.8z" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M97.5 25.3l-8.3-14.3.3-.2c1.9-1.3 3.8-2 5.7-2 4.6 0 7.9 3.8 8.6 7.5.3 1.5.6 6.6-6 8.8l-.3.2zm-7.4-14l7.7 13.3c3.9-1.4 5.9-4.4 5.3-8-.6-3.4-3.7-6.9-7.9-6.9-1.7-.1-3.4.4-5.1 1.6z" clip-path="url(#b)"></path>
+                        <path fill="#F6D2A2" fill-rule="evenodd" d="M92 112.3c2.7 1.7 7.7 6.8 3.6 9.3-3.9 3.6-6.1-4-9.6-5 1.5-2 3.4-3.9 6-4.3" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M93.5 122.9c-1.6 0-3-1.6-4.2-3.1-1.1-1.2-2.2-2.5-3.4-2.9l-.5-.1.3-.4c1.2-1.7 3.2-3.9 6.2-4.4h.1l.1.1c1.7 1.1 5.4 4.2 5.3 7.1 0 1.1-.6 2-1.7 2.7-.7.7-1.4 1-2.2 1zm-7-6.5c1.2.5 2.2 1.8 3.2 2.9 1.2 1.5 2.4 2.8 3.7 2.8.6 0 1.2-.3 1.8-.9h.1c.9-.6 1.4-1.3 1.4-2.2 0-2.3-2.9-5.2-4.9-6.5-1.8.5-3.6 1.7-5.3 3.9zM95.6 121.9c-.1 0-.2-.1-.3-.2-.2-.4-.4-.9-.5-1.3-.3-.8-.6-1.6-1.2-2.2-.1-.1-.1-.3 0-.5.1-.1.3-.1.5 0 .7.7 1.1 1.6 1.4 2.5l.5 1.2c.1.2 0 .4-.1.5h-.3z" clip-path="url(#b)"></path>
+                        <path fill="#F6D2A2" fill-rule="evenodd" d="M43.2 118.1c-3.2.5-5 3.4-7.7 4.9-2.5 1.5-3.5-.5-3.7-.9-.4-.2-.4.2-1-.4-2.3-3.7 2.4-6.4 4.9-8.2 3.5-.8 5.7 2.2 7.5 4.6" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M33.8 123.8c-1.3 0-2-1.1-2.2-1.5h-.1c-.3 0-.5-.1-.9-.5v-.1c-2.2-3.5 1.6-6.2 4.1-8l.9-.6h.2c.4-.1.7-.1 1.1-.1 3 0 4.9 2.6 6.5 4.7l.5.7-.6.1c-1.9.3-3.3 1.5-4.7 2.7-.9.8-1.8 1.5-2.8 2.1-.8.3-1.4.5-2 .5zm-2.2-2.1c.1 0 .2 0 .4.1h.1l.1.1c.2.3.7 1.2 1.7 1.2.5 0 1-.2 1.5-.5 1-.5 1.9-1.3 2.7-2 1.3-1.1 2.7-2.3 4.5-2.8-1.5-2-3.3-4.2-5.8-4.2-.3 0-.6 0-.9.1l-.8.6c-2.6 1.8-5.8 4.1-3.9 7.1.1.2.2.3.4.3zM31.8 122.4c-.2 0-.4-.2-.3-.4.1-1 .6-1.7 1.1-2.5.3-.4.5-.8.7-1.2.1-.2.3-.2.4-.2.2.1.2.3.2.4-.2.5-.5.9-.8 1.3-.5.7-.9 1.3-1 2.1 0 .4-.1.5-.3.5z" clip-path="url(#b)"></path>
+                        <path fill-rule="evenodd" d="M29.9 21.7c-1.8-.9-3.1-2.2-2-4.3 1-1.9 2.9-1.7 4.7-.8l-2.7 5.1zM94.8 19.9c1.8-.9 3.1-2.2 2-4.3-1-1.9-2.9-1.7-4.7-.8l2.7 5.1z" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path fill="#F6D2A2" fill-rule="evenodd" d="M107.1 68.2c-.2 3.5-3.7 1.9-5.3.8-1.5-1.1-2-.2-2.1-2.3-.1-1.4-.2-2.7-.2-4.1 2.3-.2 4.8.3 6.7 1.7 1 .8 2.8 3 .9 3.9" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M105.3 70.7c-1.5 0-3.2-1.1-3.7-1.4-.5-.3-.8-.5-1.1-.6-.8-.3-1-.5-1.1-2 0-.3 0-.6-.1-.9-.1-1-.2-2.1-.1-3.2v-.3h1.3c2.2 0 4.3.6 5.9 1.8.7.5 2 1.9 1.9 3.1 0 .4-.2.9-.8 1.2-.2 2-1.5 2.3-2.2 2.3zm-5.5-7.7c0 .9 0 1.9.1 2.8 0 .3 0 .6.1.9.1 1.2.2 1.2.7 1.4.3.1.7.3 1.3.6.9.6 2.3 1.3 3.3 1.3.6 0 1.4-.2 1.5-1.8v-.2l.2-.1c.4-.2.6-.4.6-.8.1-.8-.9-2-1.6-2.5-1.5-1.1-3.5-1.7-5.5-1.7-.2.1-.4.1-.7.1z" clip-path="url(#b)"></path>
+                        <path fill="#C6B198" fill-rule="evenodd" d="M107.1 68.2c-.5-.2-1.1-.3-1.4-.8" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M107.1 68.6h-.1l-.2-.1c-.5-.2-1-.3-1.3-.8-.1-.1-.1-.4.1-.5.1-.1.4-.1.5.1.2.3.6.4 1 .6.1 0 .2.1.2.1.2.1.3.3.2.4-.1.1-.3.2-.4.2z" clip-path="url(#b)"></path>
+                        <path fill="#6AD7E5" fill-rule="evenodd" d="M62.8 4c13.6 0 26.3 1.9 33 15 6 14.6 3.8 30.4 4.8 45.9.8 13.3 2.5 28.6-3.6 40.9-6.5 12.9-22.7 16.2-36 15.7-10.5-.4-23.1-3.8-29.1-13.4-6.9-11.2-3.7-27.9-3.2-40.4.6-14.8-4-29.7.9-44.1 4.9-15.1 18.5-18.5 33.2-19.6" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M63.3 121.9h-2.5c-4.1-.1-10.3-.8-16.4-3.3-5.9-2.4-10.2-5.8-13-10.3-5.6-9.1-4.6-21.6-3.7-32.7.2-2.8.4-5.4.5-7.9.2-5.2-.2-10.6-.7-15.7-.8-9.4-1.6-19.1 1.5-28.5 2.4-7 6.7-12 13.2-15.2 5.1-2.5 11.4-3.9 20.4-4.6 13.4-.1 26.7 1.8 33.4 15.1 4.4 10.7 4.4 22.2 4.5 33.3 0 4.2 0 8.5.3 12.7.1 1.3.2 2.6.2 3.9.8 12.2 1.7 26-3.9 37.2-2.8 5.7-7.7 9.9-14.4 12.6-5.4 2.2-12.2 3.4-19.4 3.4zm-.5-117.6c-14.1 1.1-27.9 4.2-33 19.4-3.1 9.3-2.3 18.9-1.5 28.2.4 5.2.9 10.5.7 15.8-.1 2.5-.3 5.1-.5 7.9-.9 11-1.9 23.4 3.6 32.3 2.3 3.7 9.7 12.5 28.8 13.2h2.5c22.1 0 30.3-9.8 33.3-15.6 5.5-11 4.6-24.8 3.9-36.9-.1-1.3-.2-2.6-.2-3.9-.2-4.2-.3-8.5-.3-12.7-.1-11-.1-22.5-4.4-33.1-3-5.9-7.5-9.9-13.7-12.2-6.4-2.1-13.6-2.4-19.2-2.4z" clip-path="url(#b)"></path>
+                        <path fill="#fff" fill-rule="evenodd" d="M65.2 22.2c2.4 14.2 25.6 10.4 22.3-3.9-3-12.8-23.1-9.2-22.3 3.9" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M76.2 31.5c-4.5 0-10.2-2.4-11.4-9.2-.2-3.2.8-6.1 2.9-8.3 2.3-2.5 5.8-3.9 9.4-3.9 4.2 0 9.2 2.2 10.6 8.3.8 3.4.2 6.4-1.7 8.8-2.1 2.6-5.8 4.3-9.8 4.3zm-10.7-9.3c.5 2.8 1.8 5 3.9 6.6 1.8 1.4 4.3 2.1 6.8 2.1 3.7 0 7.3-1.6 9.3-4.1 1.8-2.2 2.3-5.1 1.6-8.3-1.3-5.7-6-7.7-10-7.7-3.4 0-6.7 1.4-8.9 3.7-1.9 2-2.9 4.7-2.7 7.7z" clip-path="url(#b)"></path>
+                        <path fill="#fff" fill-rule="evenodd" d="M37.5 24.5c3.2 12.3 22.9 9.2 22.2-3.2-.9-14.8-25.3-12-22.2 3.2" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M48 32.7c-4.3 0-9.3-2.1-10.9-8.1-.7-3.5 0-6.7 2-9.1 2.2-2.7 5.8-4.3 9.7-4.3 5.2 0 10.7 3.1 11.1 10.1.2 2.9-.7 5.5-2.7 7.6-2.1 2.3-5.6 3.8-9.2 3.8zm.8-20.8c-3.7 0-7.1 1.5-9.2 4-1.9 2.3-2.5 5.2-1.8 8.5 1.4 5.6 6.2 7.6 10.2 7.6 3.4 0 6.7-1.3 8.8-3.6 1.8-1.9 2.7-4.4 2.5-7.1-.2-4.3-3.1-9.4-10.5-9.4z" clip-path="url(#b)"></path>
+                        <path fill="#fff" fill-rule="evenodd" d="M68 39.2c0 1.8.4 3.9.1 5.9-.5.9-1.4 1-2.2 1.3-1.1-.2-2-.9-2.5-1.9-.3-2.2.1-4.4.2-6.6l4.4 1.3z" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M65.9 46.8c-1.3-.2-2.3-1-2.8-2.1-.2-1.6-.1-3.1 0-4.6.1-.7.1-1.4.1-2.1v-.4l5.1 1.6v.2c0 .6.1 1.2.1 1.9.1 1.3.2 2.7 0 4v.1c-.4.8-1.1 1-1.8 1.3-.2-.1-.4 0-.7.1zm-2.2-2.4c.4.9 1.2 1.5 2.1 1.7.2-.1.4-.1.5-.2.6-.2 1.1-.4 1.4-.9.2-1.2.1-2.5 0-3.8 0-.6-.1-1.2-.1-1.7l-3.8-1.2c0 .6-.1 1.2-.1 1.7-.1 1.6-.2 3 0 4.4z" clip-path="url(#b)"></path>
+                        <path fill-rule="evenodd" d="M46.3 22.5c0 2-1.5 3.6-3.3 3.6-1.8 0-3.3-1.6-3.3-3.6s1.5-3.6 3.3-3.6c1.8 0 3.3 1.6 3.3 3.6" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path fill="#fff" fill-rule="evenodd" d="M45.2 23.3c0 .5-.4.9-.8.9s-.8-.4-.8-.9.4-.9.8-.9c.5 0 .8.4.8.9" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path fill-rule="evenodd" d="M74.2 21.6c0 2-1.5 3.6-3.3 3.6-1.8 0-3.3-1.6-3.3-3.6s1.5-3.6 3.3-3.6c1.8 0 3.3 1.6 3.3 3.6" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path fill="#fff" fill-rule="evenodd" d="M73.2 22.4c0 .5-.3.9-.8.9-.4 0-.8-.4-.8-.9s.3-.9.8-.9c.4 0 .8.4.8.9M58.4 39c-1.5 3.5.8 10.6 4.8 5.4-.3-2.2.1-4.4.2-6.6l-5 1.2z" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path d="M60.5 46.6c-.7 0-1.4-.4-1.9-1.2-1.1-1.6-1.3-4.6-.5-6.5l.1-.2 5.5-1.4v.4l-.1 2.2c-.1 1.5-.2 2.9 0 4.4v.1l-.1.1c-1 1.4-2 2.1-3 2.1zm-1.8-7.3c-.6 1.7-.4 4.4.5 5.7.4.6.8.9 1.3.9.7 0 1.5-.6 2.3-1.6-.2-1.5-.1-3 .1-4.4l.1-1.7-4.3 1.1z" clip-path="url(#b)"></path>
+                        <path fill="#F6D2A2" fill-rule="evenodd" d="M58.9 32.2c-2.7.2-4.9 3.5-3.5 6 1.9 3.4 6-.3 8.6 0 3 .1 5.4 3.2 7.8.6 2.7-2.9-1.2-5.7-4.1-7l-8.8.4z" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        <path fill="#231F20" d="M69.7 40.2c-.9 0-1.8-.4-2.7-.8-.9-.4-1.9-.8-3-.8h-.3c-.8 0-1.7.3-2.7.7-1.1.4-2.2.7-3.2.7-1.2 0-2.1-.5-2.7-1.6-.7-1.2-.6-2.6.1-3.9.8-1.5 2.2-2.4 3.7-2.6l8.9-.4h.1c2.2.9 4.7 2.6 5.2 4.6.2 1-.1 2-.9 2.9-.8.9-1.6 1.2-2.5 1.2zm-5.6-2.2c1.1 0 2.2.5 3.2.9.9.4 1.7.7 2.5.7.7 0 1.3-.3 1.9-.9.7-.7.9-1.5.8-2.3-.4-1.7-2.8-3.3-4.7-4.1l-8.7.4c-1.3.1-2.5 1-3.2 2.2-.6 1.1-.6 2.3-.1 3.3.5.9 1.1 1.3 2.1 1.3.9 0 1.9-.4 2.9-.7 1.1-.4 2-.7 3-.7 0-.2.1-.2.3-.1z" clip-path="url(#b)"></path>
+                        <path fill-rule="evenodd" d="M58.6 32.1c-.2-4.7 8.8-5.3 9.8-1.4 1.1 4-9.4 4.9-9.8 1.4" clip-path="url(#b)" clip-rule="evenodd"></path>
+                        </svg>
+                    <div class="text-base col-span-2 gap-2">
+                        <div class="grid grid-rows-2 w-auto">
+                            <h1 class="text-white h-16 md:h-20 w-auto">I used go language in 2022-2023 for programming algorithm course.</h1>
+                            <span class="block mt-5 text-xl font-jakarta font-extrabold tracking-wide bg-gradient-to-r from-black to-purple-400 text-transparent bg-clip-text">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- golang end -->
+                <!-- py -->
+                <div class="grid grid-cols-3 gap-1 bg-gray-400 py-12 px-6 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="python" width="auto" height="110">
+                        <path d="M18.231 7.357h.001v-.004z"></path>
+                        <path fill="#F2BB30" d="M20.699 17.748c1.666 0 2.282-1.162 2.861-2.904.6-1.794.574-3.52 0-5.818-.413-1.655-1.194-2.904-2.861-2.904h-2.147v2.541c0 1.971-1.672 3.632-3.578 3.632H9.252c-1.565 0-2.861 1.339-2.861 2.909v5.454c0 1.553 1.35 2.464 2.861 2.909 1.81.53 3.552.626 5.721 0 1.441-.418 2.861-1.26 2.861-2.909v-2.181h-5.717v-.728h8.582zm-5.367 2.181c.594 0 1.077.488 1.077 1.088 0 .606-.482 1.093-1.077 1.093a1.09 1.09 0 0 1-1.077-1.093 1.088 1.088 0 0 1 1.077-1.088z"></path>
+                        <path fill="#35668F" d="M3.444 17.749H5.41v-2.615c0-1.891 1.634-3.558 3.578-3.558h5.721c1.591 0 2.861-1.312 2.861-2.909V3.209c0-1.553-1.307-2.717-2.861-2.978-1.918-.317-4.002-.299-5.721.006l.001-.001c-2.422.428-2.86 1.322-2.86 2.977v2.181h5.727v.729H3.98C2.314 6.123.856 7.125.402 9.027c-.525 2.181-.546 3.541 0 5.818.406 1.693 1.377 2.904 3.042 2.904zM8.63 3.937a1.084 1.084 0 0 1-1.077-1.088A1.089 1.089 0 0 1 8.63 1.756c.59 0 1.077.492 1.077 1.093S9.225 3.937 8.63 3.937z"></path>
+                      </svg>
+                    <div class="text-base col-span-2 gap-2">
+                        <div class="grid grid-rows-2 w-auto">
+                            <h1 class="text-white h-16 md:h-20 w-auto">I used python for a project to build a TCP-based server in 2024.</h1>
+                            <span class="block mt-5 text-xl font-jakarta font-extrabold tracking-wide bg-gradient-to-r from-black to-purple-400 text-transparent bg-clip-text">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- py end -->
+                <!-- c++ start -->
+                <div class="grid grid-cols-3 gap-1 bg-gray-400 py-12 px-6 rounded-3xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 288" id="c" width="auto" height="120">
+                        <path fill="#5C8DBC" d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761-2.052-3.602-5.125-6.621-9.247-9.008-34.025-19.619-68.083-39.178-102.097-58.817-9.17-5.294-18.061-5.101-27.163.269C100.395 12.39 32.59 51.237 12.385 62.94 4.064 67.757.015 75.129.013 84.711 0 124.166.013 163.62 0 203.076c.002 4.724.991 8.909 2.988 12.517 2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252 1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345"></path>
+                        <path fill="#1A4674" d="M128.182 143.509L2.988 215.593c2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.269 34.015-19.64 68.075-39.198 102.105-58.817 4.217-2.44 7.333-5.544 9.386-9.252l-124.413-72.074"></path>
+                        <path fill="#1A4674" d="M91.101 164.861c7.285 12.718 20.98 21.296 36.69 21.296 15.807 0 29.58-8.687 36.828-21.541l-36.437-21.107-37.081 21.352"></path>
+                        <path fill="#1B598E" d="M255.569 84.72c-.002-4.83-1.035-9.098-3.124-12.761l-124.263 71.55 124.413 72.074c1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345"></path>
+                        <path fill="#FFF" d="M248.728 148.661h-9.722v9.724h-9.724v-9.724h-9.721v-9.721h9.721v-9.722h9.724v9.722h9.722v9.721M213.253 148.661h-9.721v9.724h-9.722v-9.724h-9.722v-9.721h9.722v-9.722h9.722v9.722h9.721v9.721"></path>
+                        <path fill="#FFF" d="M164.619 164.616c-7.248 12.854-21.021 21.541-36.828 21.541-15.71 0-29.405-8.578-36.69-21.296a42.062 42.062 0 0 1-5.574-20.968c0-23.341 18.923-42.263 42.264-42.263 15.609 0 29.232 8.471 36.553 21.059l36.941-21.272c-14.683-25.346-42.096-42.398-73.494-42.398-46.876 0-84.875 38-84.875 84.874 0 15.378 4.091 29.799 11.241 42.238 14.646 25.48 42.137 42.637 73.634 42.637 31.555 0 59.089-17.226 73.714-42.781l-36.886-21.371"></path>
+                      </svg>
+                    <div class="text-base col-span-2 gap-2">
+                        <div class="grid grid-rows-2 w-auto">
+                            <h1 class="text-white h-16 md:h-20 w-auto">I used C++ in 2023 for data structure course and “MobilEase” project.</h1>
+                            <span class="block mt-5 text-xl font-jakarta font-extrabold tracking-wide bg-gradient-to-r from-black to-purple-400 text-transparent bg-clip-text">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- c++ end -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills End -->
+
+    <!-- Contact Section Strat -->
+
+    <section id="contact" class="pt-36 pb-32">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-4xl text-primary mb-2">Any questions ?</h4>
+                    <h2 class="font-semibold text-primary text-lg mb-4 sm:text-xl">contact me!</h2>
+                </div>
+            </div>
+            <form action="mailto:adnansyah26@gmail.com" method="post" enctype="text/plain"> 
+                <div class="w-full lg:w-2/3 lg:mx-auto">
+                    <div class="w-full px-4 mb-8">
+                        <label for="name" class="text-base font-bold text-primary ">Name</label>
+                        <input type="text" id="name" class="w-full bg-slate-400 text-black p-3 rounded-md focus:outline-none focus:ring-white focus:ring-1 focus:border-blue-500"/>
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="email" class="text-base font-bold text-primary ">Email</label>
+                        <input type="email" id="email" class="w-full bg-slate-400 text-black p-3 rounded-md focus:outline-none focus:ring-white focus:ring-1 focus:border-blue-500"/>
+                    </div>
+                    <div class="w-full px-4 mb-8">
+                        <label for="message" class="text-base font-bold text-primary ">Message</label>
+                        <textarea type="email" id="email" class="w-full bg-slate-400 text-black p-3 rounded-md focus:outline-none focus:ring-white focus:ring-1 focus:border-blue-500 h-32"></textarea>
+                    </div>
+                    <div class="w-full px-4">
+                        <input type="submit" value="send" class="text-base font-semibold text-primary bg-gray-600 py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section End -->
+    
+    <!-- Footer Start -->
+    <footer class="bg-gray-900 pt-9 pb-8">
+        <div class="container">
+            <div class="w-full">
+                <p class="text-primary text-center text-sm">Muhammad Adnansyah© created with Tailwind</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+     <style>
+        body {
+            background-color: black;
+        }
+     </style>
+
+    <script src="dist/js/script.js"></script>
+</body>
+</html>
